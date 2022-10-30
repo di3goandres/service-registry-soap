@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RegisterClientResponse xmlns="http://arquitectura.com/users"
+						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+						xsi:schemaLocation="http://arquitectura.com/users client-details.xsd">
+	<ClientDetails>
+		<id>123</id>
+		<name>diego andres</name>
+		<description>programmer</description>
+	</ClientDetails>
+</RegisterClientResponse>

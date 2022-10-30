@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RegisterClientRequest xmlns="http://arquitectura.com/users"
+                       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                       xsi:schemaLocation="http://arquitectura.com/users client-details.xsd">
+    <identification>122</identification>
+    <name>Diego andres montealegre</name>
+    <description>Ingeniero de sistemas</description>
+    <identificationType>CC</identificationType>
+    <direction>Av siempre viva</direction>
+</RegisterClientRequest>

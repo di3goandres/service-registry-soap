@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://arquitectura.com/users"
+xmlns:tns="http://arquitectura.com/users" elementFormDefault="qualified">
+	<xs:element name="RegisterClientRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name= "identification" type="xs:integer"/>
+				<xs:element name= "name" type="xs:string"/>
+				<xs:element name= "description" type="xs:string"/>
+				<xs:element name="identificationType" type="tns:IdentificationType"/>
+				<xs:element name= "direction" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+
+	</xs:element>
+	<xs:element name="RegisterClientResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name= "ClientDetails" type="tns:ClientDetails"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="ClientDetails">
+		<xs:sequence>
+			<xs:element name= "identification" type="xs:integer"/>
+			<xs:element name= "name" type="xs:string"/>
+			<xs:element name= "description" type="xs:string"/>
+			<xs:element name="identificationType" type="tns:IdentificationType"/>
+			<xs:element name= "direction" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="IdentificationType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="TI" />
+			<xs:enumeration value="CC" />
+			<xs:enumeration value="NIP" />
+			<xs:enumeration value="NUIP" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
